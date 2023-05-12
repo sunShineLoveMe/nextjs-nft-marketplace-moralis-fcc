@@ -1,11 +1,11 @@
 import { MoralisProvider } from "react-moralis"
 import "../styles/globals.css"
-// import Header from "../components/Header"
+import Header from "../components/Header"
 
 function MyApp({ Component, pageProps }) {
     return (
         <MoralisProvider initializeOnMount={false}>
-            {/* <Header /> */}
+            <Header />
             <Component {...pageProps} />
         </MoralisProvider>
     )
